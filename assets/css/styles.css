@@ -39,6 +39,11 @@ p {
 
 nav {
   padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+  z-index: 99999;
 }
 
 ul {
@@ -47,6 +52,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+section {
+  padding: 4rem 0;
 }
 
 ul.flex {
@@ -61,6 +70,11 @@ ul.flex {
   font-size: 18px;
   color: #1F1534;
   text-transform: capitalize;
+}
+
+label .open,
+label .close {
+  display: none;
 }
 
 header {
@@ -107,4 +121,107 @@ header .flex {
 
 .header-img img {
   width: 100%;
+}
+
+.divider {
+  height: 2px;
+  width: 56px;
+  border-radius: 5px;
+  background-color: black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.services {
+  text-align: center;
+}
+
+.services svg {
+  margin: 26px 0 33px 0;
+}
+
+.cards {
+  margin-top: 5rem;
+}
+
+.cards.flex {
+  flex-wrap: wrap;
+  gap: 37px;
+}
+
+.card img {
+  margin-bottom: 22px;
+}
+
+.card {
+  text-align: start;
+  padding: 37px 54px;
+  margin-bottom: 3rem;
+  max-width: 350px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 10px 40px 50px 0 rgba(229, 233, 246, 40%);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.services {
+  position: relative;
+}
+
+.services .cards-bg {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.services .btn {
+  background: white;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.testimonials {
+  color: white;
+  max-width: 1120px;
+  margin: auto;
+  border-radius: 24px;
+  background: linear-gradient(#67C3F3, #5A98F2);
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+.testimonials .container{
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial.flex{
+  gap: 100px;
+}
+.testimonial .content.flex{
+  gap: 2rem;
+  justify-content: flex-start;
+}
+.testimonial .content, .testimonial .qoute{
+  width: 50%;
+}
+.testimonials{
+  position: relative;
+}
+
+.testimonials .square{
+  position: absolute;
+  top: -19px;
+  right: -53px;
 }
