@@ -1,24 +1,26 @@
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
 
-  #menu-check:checked ~ ul.flex{
+  #menu-check:checked~ul.flex {
     display: flex;
   }
 
-  label .open{
+  label .open {
     display: inherit;
   }
-  .close{
-    display: none;
-  }
-  #menu-check:checked ~ label .open{
+
+  .close {
     display: none;
   }
 
-  #menu-check:checked ~ label .close{
+  #menu-check:checked~label .open {
+    display: none;
+  }
+
+  #menu-check:checked~label .close {
     display: inline;
   }
 
-  ul.flex{
+  ul.flex {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -31,20 +33,21 @@
     padding: 20px 0;
   }
 
-  header{
+  header {
     margin: 3rem 0;
   }
 
-  header .flex{
+  header .flex {
     flex-direction: column-reverse;
     gap: 3rem;
   }
-  .header-content{
+
+  .header-content {
     max-width: 100%;
   }
-  
 
-  .services .card{
+
+  .services .card {
     max-width: 100%;
   }
 }

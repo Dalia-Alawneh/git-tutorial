@@ -27,7 +27,8 @@ p {
 }
 
 .container {
-  width: 80%;
+  width: calc(100% - 30px);
+  max-width: 1247px;
   margin: auto;
 }
 
